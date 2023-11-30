@@ -14,15 +14,102 @@ body {
 
 /* todo ##UTILS */
 
+ 
+button {
+  background-color: blue;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  /* debug */
+  height: 100%;
+  border-left: 2px dashed red;
+  border-right: 2px dashed red;
+}
+
+.container.container-wider {
+  width: 80%;
+} 
 
 
 /* HEADER */
+
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumbotron {
+  /* debug */
+  background-color: #b4d0e7;
+  height: 600px;
+}
+
+
+/* nav */
+
+
+.wrapper-nav {
+  display: flex;
+  align-items: center;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  padding: 20px;
+}
 
 
 
 
 /* MAIN */
 
+section {
+  /* debug */
+  border-top: 2px dashed black;
+  height: 600px;
+}
+
+
+.brand-wrapper {
+  /* debug */
+  height: 400px;
+  background-color: rgb(231, 99, 76);
+}
+
+
+.free-trial {
+  background-color: lightblue;
+  height: 200px;
+}
+
 
 /* FOOTER */
 
+footer {
+  background-color: black;
+  height: 300px;
+}
