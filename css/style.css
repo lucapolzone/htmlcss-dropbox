@@ -8,15 +8,16 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  /* font-size: 1.4rem; */
 }
-
 
 
 /* todo ##UTILS */
 
  
 button {
-  background-color: blue;
+  background-color: #0061ff;
   padding: 10px 20px;
   border: none;
   color: white;
@@ -44,7 +45,7 @@ a:link, a:visited {
 }
 
 .container.container-wider {
-  width: 80%;
+  width: 70%;
 } 
 
 
@@ -56,12 +57,60 @@ a:link, a:visited {
   justify-content: space-between;
 }
 
+
+/* jumbotron */
+
 .jumbotron {
-  /* debug */
+  padding-top: 5rem;
   background-color: #b4d0e7;
-  height: 600px;
+  height: 700px;
+
 }
 
+.jumbotron h1 {
+  font-size: 5rem;
+}
+
+.wrapper-jumbo {
+  width: 90%;
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+  /* background-color: rgb(95, 116, 109); */
+}
+
+.wrapper-colonna-testo {
+  display: flex;
+  width: 400px;
+  flex-direction: column; 
+  justify-content: space-between;
+  min-height: 400px;
+}
+
+
+.jumbo-colonna {
+  width: 500px;
+}
+
+#jumbo-colonna-btn {
+  width: 200px;
+  padding: 15px 0;
+}
+
+
+/* .wrapper-img {
+
+} */
+
+
+
+#jumbo-img {
+  width: 800px;
+}
+
+.fa-arrow-down {
+  font-size: 3rem;
+}
 
 /* nav */
 
@@ -105,6 +154,8 @@ section {
   background-color: lightblue;
   height: 200px;
 }
+
+
 
 
 /* FOOTER */
