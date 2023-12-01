@@ -41,18 +41,22 @@ a:link, a:visited {
   margin: 0 auto;
   /* debug */
   height: 100%;
-  border-left: 3px dashed red;
-  border-right: 3px dashed red;
+  /* border-left: 3px dashed red;
+  border-right: 3px dashed red; */
 }
 
 .container.container-wider {
   width: 70%;
-  border-left: 3px dashed green;
-  border-right: 3px dashed green;
+  /* border-left: 3px dashed green;
+  border-right: 3px dashed green; */
 } 
 
 
-/* HEADER */
+.title-h2 {
+  font-size: 3rem;
+}
+
+/*todo === HEADER === */
 
 
 .header-top {
@@ -103,12 +107,6 @@ a:link, a:visited {
 }
 
 
-/* .wrapper-img {
-
-} */
-
-
-
 #jumbo-img {
   width: 820px;
 }
@@ -143,8 +141,8 @@ nav li {
 
 section {
   margin: 90px auto;
-  border-top: 2px dashed purple;
-  border-bottom: 2px dashed purple;
+  /* border-top: 2px dashed purple;
+  border-bottom: 2px dashed purple; */
 }
 
 
@@ -176,7 +174,7 @@ section#business-plan {
   /* border: 2px dashed black; */
 }
 
-.wrapper-prima-riga h2 { font-size: 3rem;}
+
 
 /* .wrapper-bottoni { */
   /* debug */
@@ -249,7 +247,7 @@ section#business-plan {
 
 .card-enterprise {
   margin-top: 30px;
-  height: 250px;
+  /* height: 250px; */
   border: 1px solid #999;
 }
 
@@ -325,7 +323,7 @@ section#business-plan {
 }
 
 .col-tools img {
-  width: 300px;
+  width: 100%;
 }
 
 .wrapper-enterprise-tools {
@@ -346,15 +344,75 @@ section#business-plan {
 
 .free-trial {
   background-color: lightblue;
-  height: 200px;
+  padding: 50px 0;
+}
+
+.card-enterprise-free-trial {
+  border: none;
 }
 
 
+.wrapper-enterprise-free-trial {
+  gap: 130px;
+}
+
+/* todo === QUARTA SEZIONE: FAQ === */
 
 
-/* FOOTER */
+.title-faq {
+  padding: 20px 0;
+}
+
+.faq-row {
+  padding: 30px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* todo === FOOTER === */
 
 footer {
   background-color: black;
-  height: 300px;
+  color: white;
+  /* debug */
+  /* height: 600px; */
+  padding: 5px 0;
+}
+
+footer h2 {
+  padding-bottom: 30px;
+}
+
+footer li {
+  padding: 5px 0;
+}
+
+
+footer a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper-footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper-footer-top {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#piero {
+  width: 150px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.wrapper-footer-bottom {
+  padding: 35px 0;
 }
