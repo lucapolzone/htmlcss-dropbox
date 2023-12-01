@@ -301,18 +301,38 @@ section#business-plan {
   width: 40%;
   /* background-color: rgb(207, 207, 170); */
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 20px;
 }
 
 .wrapper-partner-caption button {
-  height: 50px;
+  width: 200px;
 }
 
 /* todo === SECONDA SEZIONE === */
 
 
+.wrapper-columns-tools {
+  height: 100%;
+}
 
 
+.col-tools {
+  height: 100%;
+  /* border: 2px dashed lime; */
+  border: none;
+}
+
+.col-tools img {
+  width: 300px;
+}
+
+.wrapper-enterprise-tools {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
 
 /* todo === TERZA SEZIONE: FASCIONE coi quadrati === */
 
