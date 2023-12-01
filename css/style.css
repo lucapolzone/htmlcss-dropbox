@@ -36,16 +36,19 @@ a:link, a:visited {
 
 
 .container {
+  /* width: 47%; */
   width: 60%;
   margin: 0 auto;
   /* debug */
   height: 100%;
-  /* border-left: 2px dashed red;
-  border-right: 2px dashed red; */
+  border-left: 3px dashed red;
+  border-right: 3px dashed red;
 }
 
 .container.container-wider {
   width: 70%;
+  border-left: 3px dashed green;
+  border-right: 3px dashed green;
 } 
 
 
@@ -55,8 +58,10 @@ a:link, a:visited {
 .header-top {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
+  position: sticky; /* é da sistemare, scende solo fino al jumbotron */
+  top: 0;
 }
-
 
 /* jumbotron */
 
@@ -134,16 +139,16 @@ nav li {
 
 
 
-/* MAIN */
+/* todo === MAIN === */
 
 section {
-  /* debug */
-  /* border-top: 2px dashed black; */
-  /* height: 600px; */
+  margin: 90px auto;
+  border-top: 2px dashed purple;
+  border-bottom: 2px dashed purple;
 }
 
 
-/* PRIMA SEZIONE  */
+/* todo === PRIMA SEZIONE === */
 
 /*
 section#business-plan {
@@ -153,13 +158,13 @@ section#business-plan {
 
 .wrapper-business-plan {
   display: flex;
-  margin: 90px auto;
+  /* margin: 90px auto; */
   flex-direction: column;
   /* debug */
-  width: 1000px;
+  /* width: 1000px; */
 }
 
-/* todo ===================== */
+/* ===================== */
 
 .wrapper-prima-riga {
   height: 150px;
@@ -173,24 +178,24 @@ section#business-plan {
 
 .wrapper-prima-riga h2 { font-size: 3rem;}
 
-.wrapper-bottoni {
+/* .wrapper-bottoni { */
   /* debug */
   /* border: 2px dashed black; */
-}
+/* } */
 
 .wrapper-bottoni li {
   display: inline-block;
 }
 
 
-/* todo ===================== */
+/* ===================== */
 
 .wrapper-columns-3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* width: 100%; */
-  height: 700px;
+  height: 700px; /* !Se tolgo questa perdo degli allineamenti */
   /* debug */
   /* border: 2px dashed black; */
 }
@@ -204,6 +209,7 @@ section#business-plan {
 .icon-title {
   text-align: center;
   border-bottom: 1px solid #999;
+  height: 40px;
 }
 
 
@@ -216,7 +222,7 @@ section#business-plan {
 }
 
 .colonna-sezione-top {
-  height: 18%;
+  /* height: 18%; */
   margin-bottom: 20px;
   padding: 20px;
   /* debug */
@@ -224,14 +230,14 @@ section#business-plan {
 }
 
 .colonna-sezione-middle {
-  height: 36%;
+  height: 36%; /* !questa altezza mi fa allineare gli elementi centrali della colonna */
   padding: 10px;
   /* debug */
   /* background-color: rgb(212, 171, 171); */
 }
 
 .colonna-sezione-bottom {
-  height: 36%;
+  /* height: 36%; */
   margin-top: 20px;
   /* debug */
   /* background-color: rgb(212, 171, 171); */
@@ -239,34 +245,76 @@ section#business-plan {
 
 
 
-/* todo ===================== */
+/* ===================== */
 
-.wrapper-enterprise {
+.card-enterprise {
   margin-top: 30px;
-  height: 400px;
-  /* debug */
-  border: 2px dashed black;
+  height: 250px;
+  border: 1px solid #999;
 }
 
 
+.wrapper-enterprise {
+  display: flex;
+  /* height: 200px; */
+  margin: 30px 20px;
+  flex-direction: row;
+  gap: 70px;
+  /* debug */
+  /* border: 2px dashed orange; */
+}
+
+.inside-wrapper-enterprise-left {
+  width: 70%;
+  /* background: rgb(196, 233, 196); */
+}
+
+.inside-wrapper-enterprise-right {
+  width: 30%;
+  /* background: rgb(196, 233, 196); */
+}
+
+.inside-wrapper-enterprise-right button {
+  width: 100%;
+}
+
+/* ===================== */
+
+#container-partner-dropbox {
+  margin-top: 90px;
+}
+
+
+.wrapper-partner-dropbox {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+#img-partner {
+  /* width: 600px; */
+  width: 45%;
+}
+
+.wrapper-partner-caption {
+  /* width: 400px; */
+  width: 40%;
+  /* background-color: rgb(207, 207, 170); */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-partner-caption button {
+  height: 50px;
+}
+
+/* todo === SECONDA SEZIONE === */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* todo === TERZA SEZIONE: FASCIONE coi quadrati === */
 
 
 .brand-wrapper {
