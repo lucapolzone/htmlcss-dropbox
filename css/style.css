@@ -15,7 +15,7 @@ body {
 
 /* todo ##UTILS */
 
- 
+
 button {
   background-color: #0061ff;
   padding: 10px 20px;
@@ -29,7 +29,8 @@ li {
   list-style-type: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: black;
   text-decoration: none;
 }
@@ -49,11 +50,17 @@ a:link, a:visited {
   width: 70%;
   /* border-left: 3px dashed green;
   border-right: 3px dashed green; */
-} 
+}
 
 
 .title-h2 {
   font-size: 3rem;
+}
+
+
+.hr {
+  width: 150px;
+  height: 1px;
 }
 
 /*todo === HEADER === */
@@ -63,7 +70,8 @@ a:link, a:visited {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  position: sticky; /* é da sistemare, scende solo fino al jumbotron */
+  position: sticky;
+  /* é da sistemare, scende solo fino al jumbotron */
   top: 0;
 }
 
@@ -91,7 +99,7 @@ a:link, a:visited {
 .wrapper-colonna-testo {
   display: flex;
   width: 400px;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: space-between;
   min-height: 400px;
 }
@@ -177,8 +185,8 @@ section#business-plan {
 
 
 /* .wrapper-bottoni { */
-  /* debug */
-  /* border: 2px dashed black; */
+/* debug */
+/* border: 2px dashed black; */
 /* } */
 
 .wrapper-bottoni li {
@@ -193,7 +201,8 @@ section#business-plan {
   flex-direction: row;
   justify-content: space-between;
   /* width: 100%; */
-  height: 700px; /* !Se tolgo questa perdo degli allineamenti */
+  height: 700px;
+  /* !Se tolgo questa perdo degli allineamenti */
   /* debug */
   /* border: 2px dashed black; */
 }
@@ -228,7 +237,8 @@ section#business-plan {
 }
 
 .colonna-sezione-middle {
-  height: 36%; /* !questa altezza mi fa allineare gli elementi centrali della colonna */
+  height: 36%;
+  /* !questa altezza mi fa allineare gli elementi centrali della colonna */
   padding: 10px;
   /* debug */
   /* background-color: rgb(212, 171, 171); */
@@ -337,9 +347,114 @@ section#business-plan {
 
 .brand-wrapper {
   /* debug */
-  height: 400px;
-  background-color: rgb(231, 99, 76);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
 }
+
+
+.brand-col-1, 
+.brand-col-3 {
+  width: calc(100% / 3);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand-col-1 div, .brand-col-3 div {
+  height: 50%;
+  width: 50%;
+  /* border: 2px dashed rgb(20, 255, 59); */
+}
+
+.brand-col-1 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-col-1 div img {
+  width: 50%;
+}
+
+.brand-col-2 {
+  width: calc(100% / 3);
+  height: 100%;
+  /* border: 2px dashed rgb(20, 255, 59); */
+  padding: 40px;
+  background-color: #e2e2e2;
+}
+
+.brand-col-2 img {
+  width: 40%;
+  display: inline-block;
+}
+
+.hr.hr-box {
+  background-color: black;
+  margin: 30px 0;
+}
+
+.brand-col-2 p {
+  margin: 30px 0;
+}
+
+
+.brand-col-3 {
+  width: calc(100% / 3);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand-col-3 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-col-3 div img {
+  width: 50%;
+}
+
+
+
+.designit-green {
+  display: block;
+  background-color: #a2d39b;
+  border: 15px solid #d1e9cd;
+}
+
+.asu {
+  background-color: #61082b; 
+}
+
+.uf {
+  background-color: #0093ce;
+}
+
+.topps {
+  background-color: red;
+}
+
+.world-bicycle-relief {
+  background-color: #d5001f;
+}
+
+.hearst {
+  background-color: #b4d0e7;
+}
+
+.lonely-planet {
+ background-color: #0d2481; 
+}
+
+.clear-channel {
+ background-color: #ffd830;
+}
+
+
 
 
 .free-trial {
@@ -354,6 +469,7 @@ section#business-plan {
 
 .wrapper-enterprise-free-trial {
   gap: 130px;
+  margin: 30px 0;
 }
 
 /* todo === QUARTA SEZIONE: FAQ === */
@@ -391,7 +507,8 @@ footer li {
 }
 
 
-footer a:link, a:visited {
+footer a:link,
+a:visited {
   color: white;
   text-decoration: none;
 }
@@ -407,9 +524,7 @@ footer a:link, a:visited {
   justify-content: space-between;
 }
 
-#piero {
-  width: 150px;
-  height: 1px;
+.hr.hr-footer {
   background-color: #fff;
 }
 
