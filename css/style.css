@@ -15,7 +15,6 @@ body {
 
 /* todo ##UTILS */
 
-
 button {
   background-color: #0061ff;
   padding: 10px 20px;
@@ -24,55 +23,55 @@ button {
   font-size: 1rem;
 }
 
+.button-secondary {
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+}
+
 
 li {
   list-style-type: none;
 }
 
-a:link,
-a:visited {
+header a:link, 
+header a:visited {
   color: black;
   text-decoration: none;
 }
 
 
 .container {
-  /* width: 47%; */
   width: 60%;
   margin: 0 auto;
-  /* debug */
-  height: 100%;
-  /* border-left: 3px dashed red;
-  border-right: 3px dashed red; */
 }
 
 .container.container-wider {
   width: 70%;
-  /* border-left: 3px dashed green;
-  border-right: 3px dashed green; */
 }
-
 
 .title-h2 {
   font-size: 3rem;
 }
 
+#title-red {
+  color: #61082b;
+}
 
 .hr {
   width: 150px;
   height: 1px;
 }
 
-/*todo === HEADER === */
 
+/*todo === HEADER === */
 
 .header-top {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  position: sticky;
-  /* é da sistemare, scende solo fino al jumbotron */
-  top: 0;
 }
 
 /* jumbotron */
@@ -81,7 +80,6 @@ a:visited {
   padding-top: 4rem;
   background-color: #b4d0e7;
   height: 700px;
-
 }
 
 .jumbotron h1 {
@@ -93,7 +91,6 @@ a:visited {
   display: flex;
   padding-top: 40px;
   justify-content: space-between;
-  /* background-color: rgb(95, 116, 109); */
 }
 
 .wrapper-colonna-testo {
@@ -104,7 +101,6 @@ a:visited {
   min-height: 400px;
 }
 
-
 .jumbo-colonna {
   width: 500px;
 }
@@ -114,7 +110,6 @@ a:visited {
   padding: 15px 0;
 }
 
-
 #jumbo-img {
   width: 820px;
 }
@@ -123,14 +118,13 @@ a:visited {
   font-size: 3rem;
 }
 
-/* nav */
 
+/* nav */
 
 .wrapper-nav {
   display: flex;
   align-items: center;
 }
-
 
 nav ul {
   display: flex;
@@ -143,34 +137,15 @@ nav li {
 }
 
 
-
-
-/* todo === MAIN === */
+/* === MAIN === */
 
 section {
   margin: 90px auto;
-  /* border-top: 2px dashed purple;
-  border-bottom: 2px dashed purple; */
 }
 
 
 /* todo === PRIMA SEZIONE === */
 
-/*
-section#business-plan {
-  background-color: rgb(226, 218, 177); yellow
-}
-*/
-
-.wrapper-business-plan {
-  display: flex;
-  /* margin: 90px auto; */
-  flex-direction: column;
-  /* debug */
-  /* width: 1000px; */
-}
-
-/* ===================== */
 
 .wrapper-prima-riga {
   height: 150px;
@@ -178,19 +153,22 @@ section#business-plan {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* debug */
-  /* border: 2px dashed black; */
 }
-
-
-
-/* .wrapper-bottoni { */
-/* debug */
-/* border: 2px dashed black; */
-/* } */
 
 .wrapper-bottoni li {
   display: inline-block;
+}
+
+.little-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.little-btn.clicked {
+  border: 5px solid #0061ff;
 }
 
 
@@ -200,89 +178,81 @@ section#business-plan {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* width: 100%; */
-  height: 700px;
-  /* !Se tolgo questa perdo degli allineamenti */
-  /* debug */
-  /* border: 2px dashed black; */
 }
-
 
 .col {
   width: calc(100% / 3 - 30px);
   border: 1px solid #999;
 }
 
+.col li {
+  padding: 5px 0;
+}
+
+.col button {
+  margin-bottom: 20px;
+}
+
+
 .icon-title {
   text-align: center;
   border-bottom: 1px solid #999;
-  height: 40px;
+  padding: 10px 0;
 }
 
 
 /* divisione dentro colonna */
 
 
-
-.wrapper-dentro-colonna {
-  height: 700px;
+.column-top {
+  min-height: 310px;
+  padding: 20px 20px 0 20px;
+  /* background-color: rgb(248, 248, 161); */
 }
 
-.colonna-sezione-top {
-  /* height: 18%; */
-  margin-bottom: 20px;
+.column-middle {
   padding: 20px;
-  /* debug */
-  /* background-color: rgb(212, 171, 171); */
 }
 
-.colonna-sezione-middle {
-  height: 36%;
-  /* !questa altezza mi fa allineare gli elementi centrali della colonna */
-  padding: 10px;
-  /* debug */
-  /* background-color: rgb(212, 171, 171); */
+.column-bottom {
+  padding: 20px;
+  /* background-color: rgb(248, 248, 161); */
+  min-height: 250px;
 }
 
-.colonna-sezione-bottom {
-  /* height: 36%; */
-  margin-top: 20px;
-  /* debug */
-  /* background-color: rgb(212, 171, 171); */
+.fa-check {
+  color: #0061ff;
 }
 
-
+.hr-column {
+  width: 15%;
+  background-color: black;
+  margin-top: 40px;
+}
 
 /* ===================== */
 
-.card-enterprise {
+.card-horizontal {
   margin-top: 30px;
-  /* height: 250px; */
   border: 1px solid #999;
 }
 
-
-.wrapper-enterprise {
+.wrapper-horizontal {
   display: flex;
-  /* height: 200px; */
   margin: 30px 20px;
   flex-direction: row;
   gap: 70px;
-  /* debug */
-  /* border: 2px dashed orange; */
 }
 
-.inside-wrapper-enterprise-left {
+.inside-wrapper-horizontal-left {
   width: 70%;
-  /* background: rgb(196, 233, 196); */
 }
 
-.inside-wrapper-enterprise-right {
+.inside-wrapper-horizontal-right {
   width: 30%;
-  /* background: rgb(196, 233, 196); */
 }
 
-.inside-wrapper-enterprise-right button {
+.inside-wrapper-horizontal-right button {
   width: 100%;
 }
 
@@ -292,7 +262,6 @@ section#business-plan {
   margin-top: 90px;
 }
 
-
 .wrapper-partner-dropbox {
   display: flex;
   flex-direction: row;
@@ -300,16 +269,12 @@ section#business-plan {
 }
 
 #img-partner {
-  /* width: 600px; */
   width: 45%;
 }
 
 .wrapper-partner-caption {
-  /* width: 400px; */
   width: 40%;
-  /* background-color: rgb(207, 207, 170); */
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   gap: 20px;
 }
@@ -318,17 +283,15 @@ section#business-plan {
   width: 200px;
 }
 
-/* todo === SECONDA SEZIONE === */
+
+/* todo === SECONDA SEZIONE: BUSINESS TOOLS === */
 
 
-.wrapper-columns-tools {
+.wrapper-prima-riga-tools {
   height: 100%;
 }
 
-
 .col-tools {
-  height: 100%;
-  /* border: 2px dashed lime; */
   border: none;
 }
 
@@ -336,23 +299,21 @@ section#business-plan {
   width: 100%;
 }
 
-.wrapper-enterprise-tools {
+.wrapper-horizontal-tools {
   display: flex;
   flex-direction: column;
   margin-top: 150px;
 }
 
-/* todo === TERZA SEZIONE: FASCIONE coi quadrati === */
 
+/* todo === TERZA SEZIONE: FASCIONE coi quadrati e fascia azzurra === */
 
 .brand-wrapper {
-  /* debug */
-  width: 100%;
-  height: 500px;
   display: flex;
   flex-direction: row;
+  /* debug */
+  height: 500px;
 }
-
 
 .brand-col-1, 
 .brand-col-3 {
@@ -365,7 +326,6 @@ section#business-plan {
 .brand-col-1 div, .brand-col-3 div {
   height: 50%;
   width: 50%;
-  /* border: 2px dashed rgb(20, 255, 59); */
 }
 
 .brand-col-1 div {
@@ -374,21 +334,21 @@ section#business-plan {
   justify-content: center;
 }
 
-.brand-col-1 div img {
+.brand-col-1 img,
+.brand-col-3 img {
   width: 50%;
+  filter: invert(100%);
 }
 
 .brand-col-2 {
   width: calc(100% / 3);
   height: 100%;
-  /* border: 2px dashed rgb(20, 255, 59); */
   padding: 40px;
   background-color: #e2e2e2;
 }
 
 .brand-col-2 img {
   width: 40%;
-  display: inline-block;
 }
 
 .hr.hr-box {
@@ -399,7 +359,6 @@ section#business-plan {
 .brand-col-2 p {
   margin: 30px 0;
 }
-
 
 .brand-col-3 {
   width: calc(100% / 3);
@@ -418,8 +377,6 @@ section#business-plan {
   width: 50%;
 }
 
-
-
 .designit-green {
   display: block;
   background-color: #a2d39b;
@@ -427,7 +384,7 @@ section#business-plan {
 }
 
 .asu {
-  background-color: #61082b; 
+  background-color: #61082b;
 }
 
 .uf {
@@ -454,26 +411,25 @@ section#business-plan {
  background-color: #ffd830;
 }
 
-
-
-
 .free-trial {
   background-color: lightblue;
   padding: 50px 0;
 }
 
-.card-enterprise-free-trial {
+.card-horizontal-free-trial {
   border: none;
 }
 
-
-.wrapper-enterprise-free-trial {
+.wrapper-horizontal-free-trial {
   gap: 130px;
   margin: 30px 0;
 }
 
-/* todo === QUARTA SEZIONE: FAQ === */
+.wrapper-horizontal-free-trial button {
+  border: none;
+}
 
+/* todo === QUARTA SEZIONE: FAQ === */
 
 .title-faq {
   padding: 20px 0;
@@ -482,10 +438,15 @@ section#business-plan {
 .faq-row {
   padding: 30px 0;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   display: flex;
   justify-content: space-between;
 }
+
+.faq-row:last-child {
+  border-bottom: 1px solid black;
+}
+
 
 
 /* todo === FOOTER === */
@@ -493,8 +454,6 @@ section#business-plan {
 footer {
   background-color: black;
   color: white;
-  /* debug */
-  /* height: 600px; */
   padding: 5px 0;
 }
 
@@ -506,9 +465,8 @@ footer li {
   padding: 5px 0;
 }
 
-
 footer a:link,
-a:visited {
+footer a:visited {
   color: white;
   text-decoration: none;
 }
