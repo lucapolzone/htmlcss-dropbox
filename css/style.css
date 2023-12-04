@@ -302,7 +302,7 @@ section {
 .wrapper-horizontal-tools {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin: 150px 0;
 }
 
 
@@ -311,74 +311,48 @@ section {
 .brand-wrapper {
   display: flex;
   flex-direction: row;
-  /* debug */
-  height: 500px;
 }
 
-.brand-col-1, 
-.brand-col-3 {
+.brand-box-group {
   width: calc(100% / 3);
-  height: 100%;
+  height: calc(100vw / 3);
   display: flex;
   flex-wrap: wrap;
 }
 
-.brand-col-1 div, .brand-col-3 div {
+.brand-box {
   height: 50%;
   width: 50%;
-}
-
-.brand-col-1 div {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.brand-col-1 img,
-.brand-col-3 img {
+.brand-box img {
   width: 50%;
   filter: invert(100%);
 }
 
 .brand-col-2 {
-  width: calc(100% / 3);
-  height: 100%;
   padding: 40px;
   background-color: #e2e2e2;
+  display: block;
 }
 
 .brand-col-2 img {
   width: 40%;
 }
 
+.brand-col-2 p {
+  margin-bottom: 60px;
+}
+
 .hr.hr-box {
   background-color: black;
-  margin: 30px 0;
-}
-
-.brand-col-2 p {
-  margin: 30px 0;
-}
-
-.brand-col-3 {
-  width: calc(100% / 3);
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.brand-col-3 div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brand-col-3 div img {
-  width: 50%;
+  margin: 40px 0;
 }
 
 .designit-green {
-  display: block;
   background-color: #a2d39b;
   border: 15px solid #d1e9cd;
 }
@@ -410,6 +384,8 @@ section {
 .clear-channel {
  background-color: #ffd830;
 }
+
+
 
 .free-trial {
   background-color: lightblue;
